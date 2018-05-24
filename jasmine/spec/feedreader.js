@@ -92,9 +92,10 @@ $(function() {
 
     it('has at least one entry', function(done) {
 
-      const entry = $('.entry');
+      const feedEntries = $('.feed .entry');
 
-      expect(entry).toBeDefined();
+      expect(feedEntries).toBeDefined();
+      expect(feedEntries.length).toBeGreaterThan(0);
       done();
     });
   });
